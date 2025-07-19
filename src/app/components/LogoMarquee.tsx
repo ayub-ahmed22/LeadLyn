@@ -23,20 +23,18 @@ export default function LogoMarquee() {
 
     const scrollWidth = scrollContainer.scrollWidth;
     let scrollPos = 0;
-    let animationFrameId: number;
 
     const scroll = () => {
-      scrollPos += 0.5; // smaller increment for smoothness
+      scrollPos += 1;
       if (scrollPos >= scrollWidth / 2) {
         scrollPos = 0;
       }
       scrollContainer.scrollLeft = scrollPos;
-      animationFrameId = requestAnimationFrame(scroll);
     };
 
-    animationFrameId = requestAnimationFrame(scroll);
+    const interval = setInterval(scroll, 30);
 
-    return () => cancelAnimationFrame(animationFrameId);
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -48,7 +46,6 @@ export default function LogoMarquee() {
         <div
           ref={scrollRef}
           className="flex space-x-12 items-center overflow-x-hidden whitespace-nowrap"
-          style={{ scrollBehavior: 'smooth' }}
         >
           {/* First set of logos */}
           {logos.map((logo, index) => (
