@@ -28,7 +28,7 @@ export default function AboutPage() {
             />
             <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
               <h1 className="text-5xl font-bold text-white mb-6">About RUVAN INTELLECT</h1>
-              <p className="text-xl text-blue-100 max-w-3xl">
+              <p className="text-xl text-primary max-w-3xl">
                 Your trusted partner in security and technology solutions
               </p>
             </div>
@@ -122,49 +122,49 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="bg-white rounded-lg shadow-md p-8 mb-12"
           >
-            <h2 className="text-2xl font-semibold text-gray-900 mb-8">Our Services</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-8">Our Services</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <motion.div whileHover={{ scale: 1.04 }} className="bg-blue-50 p-6 rounded-lg cursor-pointer transition-transform">
+              <motion.div whileHover={{ scale: 1.04 }} className="bg-primary/10 p-6 rounded-lg cursor-pointer transition-transform">
                 <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
                   <Image src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&h=600&q=80" alt="Online and Onsite Support" fill className="object-cover" />
                 </div>
-                <h3 className="text-lg font-medium text-gray-900 mb-2">Online and Onsite Support</h3>
-                <p className="text-gray-600">Round-the-clock assistance to address technical issues remotely or through onsite visits.</p>
+                <h3 className="text-lg font-medium text-primary mb-2">Online and Onsite Support</h3>
+                <p className="text-primary">Round-the-clock assistance to address technical issues remotely or through onsite visits.</p>
               </motion.div>
-              <motion.div whileHover={{ scale: 1.04 }} className="bg-blue-50 p-6 rounded-lg cursor-pointer transition-transform">
+              <motion.div whileHover={{ scale: 1.04 }} className="bg-primary/10 p-6 rounded-lg cursor-pointer transition-transform">
                 <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
                   <Image src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&h=600&q=80" alt="AMC Support" fill className="object-cover" />
                 </div>
-                <h3 className="text-lg font-medium text-gray-900 mb-2">AMC Support</h3>
-                <p className="text-gray-600">Annual Maintenance Contracts tailored to client needs.</p>
+                <h3 className="text-lg font-medium text-primary mb-2">AMC Support</h3>
+                <p className="text-primary">Annual Maintenance Contracts tailored to client needs.</p>
               </motion.div>
-              <motion.div whileHover={{ scale: 1.04 }} className="bg-blue-50 p-6 rounded-lg cursor-pointer transition-transform">
+              <motion.div whileHover={{ scale: 1.04 }} className="bg-primary/10 p-6 rounded-lg cursor-pointer transition-transform">
                 <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
                   <Image src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&h=600&q=80" alt="Network Implementation" fill className="object-cover" />
                 </div>
-                <h3 className="text-lg font-medium text-gray-900 mb-2">Network Implementation</h3>
-                <p className="text-gray-600">Design, deployment, and optimization of robust network solutions.</p>
+                <h3 className="text-lg font-medium text-primary mb-2">Network Implementation</h3>
+                <p className="text-primary">Design, deployment, and optimization of robust network solutions.</p>
               </motion.div>
-              <motion.div whileHover={{ scale: 1.04 }} className="bg-blue-50 p-6 rounded-lg cursor-pointer transition-transform">
+              <motion.div whileHover={{ scale: 1.04 }} className="bg-primary/10 p-6 rounded-lg cursor-pointer transition-transform">
                 <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
                   <Image src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&h=600&q=80" alt="CCTV Installation" fill className="object-cover" />
                 </div>
-                <h3 className="text-lg font-medium text-gray-900 mb-2">CCTV Installation</h3>
-                <p className="text-gray-600">Professional installation and maintenance of CCTV systems.</p>
+                <h3 className="text-lg font-medium text-primary mb-2">CCTV Installation</h3>
+                <p className="text-primary">Professional installation and maintenance of CCTV systems.</p>
               </motion.div>
-              <motion.div whileHover={{ scale: 1.04 }} className="bg-blue-50 p-6 rounded-lg cursor-pointer transition-transform">
+              <motion.div whileHover={{ scale: 1.04 }} className="bg-primary/10 p-6 rounded-lg cursor-pointer transition-transform">
                 <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
                   <Image src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=800&h=600&q=80" alt="Network Connectivity" fill className="object-cover" />
                 </div>
-                <h3 className="text-lg font-medium text-gray-900 mb-2">Network Connectivity</h3>
-                <p className="text-gray-600">Implementation of fibre optic and LAN technologies.</p>
+                <h3 className="text-lg font-medium text-primary mb-2">Network Connectivity</h3>
+                <p className="text-primary">Implementation of fibre optic and LAN technologies.</p>
               </motion.div>
-              <motion.div whileHover={{ scale: 1.04 }} className="bg-blue-50 p-6 rounded-lg cursor-pointer transition-transform">
+              <motion.div whileHover={{ scale: 1.04 }} className="bg-primary/10 p-6 rounded-lg cursor-pointer transition-transform">
                 <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
                   <Image src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&h=600&q=80" alt="ITES Services" fill className="object-cover" />
                 </div>
-                <h3 className="text-lg font-medium text-gray-900 mb-2">ITES Services</h3>
-                <p className="text-gray-600">Technical and non-technical process solutions.</p>
+                <h3 className="text-lg font-medium text-primary mb-2">ITES Services</h3>
+                <p className="text-primary">Technical and non-technical process solutions.</p>
               </motion.div>
             </div>
           </motion.div>
@@ -177,35 +177,35 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="bg-white rounded-lg shadow-md p-8"
           >
-            <h2 className="text-2xl font-semibold text-gray-900 mb-8">Why Choose Us?</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-8">Why Choose Us?</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <motion.div whileHover={{ scale: 1.04 }} className="bg-blue-50 p-6 rounded-lg cursor-pointer transition-transform">
+              <motion.div whileHover={{ scale: 1.04 }} className="bg-primary/10 p-6 rounded-lg cursor-pointer transition-transform">
                 <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
                   <Image src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&h=600&q=80" alt="Experienced Professionals" fill className="object-cover" />
                 </div>
-                <h3 className="text-lg font-medium text-gray-900 mb-2">Experienced Professionals</h3>
-                <p className="text-gray-600">Dedicated team committed to delivering exceptional service.</p>
+                <h3 className="text-lg font-medium text-primary mb-2">Experienced Professionals</h3>
+                <p className="text-primary">Dedicated team committed to delivering exceptional service.</p>
               </motion.div>
-              <motion.div whileHover={{ scale: 1.04 }} className="bg-blue-50 p-6 rounded-lg cursor-pointer transition-transform">
+              <motion.div whileHover={{ scale: 1.04 }} className="bg-primary/10 p-6 rounded-lg cursor-pointer transition-transform">
                 <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
                   <Image src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&h=600&q=80" alt="Tailor-Made Solutions" fill className="object-cover" />
                 </div>
-                <h3 className="text-lg font-medium text-gray-900 mb-2">Tailor-Made Solutions</h3>
-                <p className="text-gray-600">Customized offerings for unique client needs.</p>
+                <h3 className="text-lg font-medium text-primary mb-2">Tailor-Made Solutions</h3>
+                <p className="text-primary">Customized offerings for unique client needs.</p>
               </motion.div>
-              <motion.div whileHover={{ scale: 1.04 }} className="bg-blue-50 p-6 rounded-lg cursor-pointer transition-transform">
+              <motion.div whileHover={{ scale: 1.04 }} className="bg-primary/10 p-6 rounded-lg cursor-pointer transition-transform">
                 <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
                   <Image src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&h=600&q=80" alt="Reliable Support" fill className="object-cover" />
                 </div>
-                <h3 className="text-lg font-medium text-gray-900 mb-2">Reliable Support</h3>
-                <p className="text-gray-600">Round-the-clock support and proactive maintenance.</p>
+                <h3 className="text-lg font-medium text-primary mb-2">Reliable Support</h3>
+                <p className="text-primary">Round-the-clock support and proactive maintenance.</p>
               </motion.div>
-              <motion.div whileHover={{ scale: 1.04 }} className="bg-blue-50 p-6 rounded-lg cursor-pointer transition-transform">
+              <motion.div whileHover={{ scale: 1.04 }} className="bg-primary/10 p-6 rounded-lg cursor-pointer transition-transform">
                 <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
                   <Image src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&h=600&q=80" alt="Cutting-Edge Technology" fill className="object-cover" />
                 </div>
-                <h3 className="text-lg font-medium text-gray-900 mb-2">Cutting-Edge Technology</h3>
-                <p className="text-gray-600">Latest tech and industry best practices.</p>
+                <h3 className="text-lg font-medium text-primary mb-2">Cutting-Edge Technology</h3>
+                <p className="text-primary">Latest tech and industry best practices.</p>
               </motion.div>
             </div>
           </motion.div>
@@ -219,19 +219,25 @@ export default function AboutPage() {
             className="py-20 bg-gray-50"
           >
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-white rounded-2xl shadow-xl p-10">
-              <h2 className="text-3xl font-bold text-blue-900 mb-8 text-center">Leadership Profile</h2>
+              <h2 className="text-3xl font-bold text-primary mb-8 text-center">Leadership Profile</h2>
               <div className="flex flex-col md:flex-row gap-8 items-start">
                 <div className="flex-shrink-0 flex flex-col items-center md:items-start w-full md:w-1/3">
-                  <div className="bg-blue-100 rounded-full p-4 mb-4">
-                    <FaUserTie className="text-4xl text-blue-700" />
+                  <div className="relative h-48 w-48 rounded-full overflow-hidden mb-4">
+                    <Image 
+                      src="/logo/vijay_na_pic-removebg-preview (1).png" 
+                      alt="Vijay Anand" 
+                      fill 
+                      className="object-cover" 
+                      priority 
+                    />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-1">Vijay Anand R</h3>
-                  <p className="text-blue-700 font-semibold mb-2">Managing Director</p>
+                  <p className="text-primary font-semibold mb-2">Managing Director</p>
                   <p className="text-gray-600 mb-4">RUVAN INTELLECT PRIVATE LIMITED</p>
                   <div className="space-y-2 text-gray-700">
-                    <p className="flex items-center gap-2"><FaMapMarkerAlt className="text-blue-600" /> Chennai, Tamil Nadu</p>
-                    <p className="flex items-center gap-2"><FaPhoneAlt className="text-blue-600" /> <a href="tel:+917530041168" className="hover:underline">+91 75300 41168</a></p>
-                    <p className="flex items-center gap-2"><FaEnvelope className="text-blue-600" /> <a href="mailto:info@ruvan.co.in" className="hover:underline">info@ruvan.co.in</a></p>
+                    <p className="flex items-center gap-2"><FaMapMarkerAlt className="text-primary" /> Chennai, Tamil Nadu</p>
+                    <p className="flex items-center gap-2"><FaPhoneAlt className="text-primary" /> <a href="tel:+917530041168" className="hover:underline">+91 75300 41168</a></p>
+                    <p className="flex items-center gap-2"><FaEnvelope className="text-primary" /> <a href="mailto:info@ruvan.co.in" className="hover:underline">info@ruvan.co.in</a></p>
                   </div>
                 </div>
                 <div className="flex-1">

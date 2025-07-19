@@ -108,7 +108,7 @@ export default function SolutionsPage() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative h-[60vh] bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <section className="relative h-[60vh] bg-gradient-to-r from-primary to-accent text-white">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <Image
           src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1920&h=1080&q=80"
@@ -119,7 +119,7 @@ export default function SolutionsPage() {
         />
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
           <h1 className="text-5xl font-bold mb-6">RUVAN INTELLECT</h1>
-          <p className="text-xl text-blue-100 max-w-3xl">
+          <p className="text-xl text-white max-w-3xl">
             Tailored security and technology solutions for your specific industry needs
           </p>
         </div>
@@ -228,12 +228,12 @@ export default function SolutionsPage() {
         />
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">Need a Custom Solution?</h2>
-          <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-primary mb-8 max-w-3xl mx-auto">
             Let us help you find the perfect security and technology solution for your specific needs
           </p>
           <a
             href="/contact"
-            className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-100 transition-colors"
+            className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-accent hover:bg-primary transition-colors"
           >
             Get in Touch
           </a>

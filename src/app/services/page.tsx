@@ -56,8 +56,8 @@ export default function Services() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-32 bg-gradient-to-r from-blue-900 to-blue-800 text-white">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-800/90 z-10" />
+      <section className="relative py-32 bg-gradient-to-r from-primary to-accent text-white">
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-accent/90 z-10" />
         <Image
           src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1920&h=1080&q=80"
           alt="Services Background"
@@ -67,7 +67,7 @@ export default function Services() {
         />
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-8">Our Services</h1>
-          <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto">
             Comprehensive solutions for your business needs
           </p>
         </div>
@@ -102,8 +102,8 @@ export default function Services() {
                     </div>
                     <p className="text-lg text-gray-600 mb-8">{service.description}</p>
                     {service.title === 'Customer Management' && (
-                      <div className="mb-6 p-4 bg-blue-50 border-l-4 border-blue-600 rounded-lg">
-                        <span className="block text-lg font-bold text-blue-900">CRM - Based Telecalling (for sales & services)</span>
+                      <div className="mb-6 p-4 bg-primary/10 border-l-4 border-primary rounded-lg">
+                        <span className="block text-lg font-bold text-primary">CRM - Based Telecalling (for sales & services)</span>
                       </div>
                     )}
                     <ul className="space-y-4">
@@ -111,7 +111,7 @@ export default function Services() {
                         .filter(item => item !== 'CRM - Based Telecalling (for sales & services)')
                         .map((item, itemIndex) => (
                           <li key={itemIndex} className="flex items-center gap-3">
-                            <svg className="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                             </svg>
                             <span className="text-gray-700">{item}</span>
@@ -128,7 +128,7 @@ export default function Services() {
 
       {/* CTA Section */}
       <section className="relative py-32">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-800/90 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-accent/90 z-10" />
         <Image
           src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1920&h=1080&q=80"
           alt="CTA Background"
@@ -137,12 +137,12 @@ export default function Services() {
         />
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">Ready to Get Started?</h2>
-          <p className="text-xl text-blue-100 mb-10 max-w-3xl mx-auto">
+          <p className="text-xl text-white mb-10 max-w-3xl mx-auto">
             Contact us today to discuss how we can help transform your business
           </p>
           <a
-            href="/contact"
-            className="inline-flex items-center px-10 py-4 border-2 border-white text-lg font-semibold rounded-lg text-white bg-transparent hover:bg-white hover:text-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl"
+            href="/contact-sales"
+            className="inline-flex items-center px-10 py-4 border-2 border-white text-lg font-semibold rounded-lg text-white bg-primary hover:bg-accent transition-all duration-300 shadow-lg hover:shadow-xl"
           >
             Contact Us
           </a>
