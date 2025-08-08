@@ -53,11 +53,11 @@ export default function TollFreeNumber() {
         >
           <div className="relative">
             <a
-              href="mailto:operation@leadlyn.com"
+              href="mailto:operations@leadlyn.com"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full shadow-lg hover:bg-primary transition-colors duration-300"
-              title="Email operation@leadlyn.com"
+              title="Email operations@leadlyn.com"
             >
               <span className="text-2xl"><FaEnvelope /></span>
               <span className="hidden sm:block font-semibold">operation@leadlyn.com</span>
