@@ -60,7 +60,7 @@ export default function TollFreeNumber() {
               title="Email operations@leadlyn.com"
             >
               <span className="text-2xl"><FaEnvelope /></span>
-              <span className="hidden sm:block font-semibold">operation@leadlyn.com</span>
+              <span className="hidden sm:block font-semibold">operations@leadlyn.com</span>
             </a>
             <button
               onClick={() => setIsEmailVisible(false)}
