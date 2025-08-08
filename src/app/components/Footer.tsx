@@ -29,7 +29,7 @@ export default function Footer() {
               </p>
               <p className="flex items-center gap-2">
                 <span className="text-xl text-white">✉️</span>
-                <a href="mailto:operation@leadlyn.com" className="text-white hover:text-accent transition-colors">
+                <a href="mailto:operations@leadlyn.com" className="text-white hover:text-accent transition-colors">
                   operation@leadlyn.com
                 </a>
               </p>
