@@ -49,22 +49,19 @@ const Navbar = () => {
       } border-b border-primary/20 transform ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-20 md:h-24">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group flex-shrink-0">
-            <Image src="/logo/logo.png" alt="Ruvan Logo" width={96} height={96} className="rounded" priority />
-            <span className="text-3xl font-extrabold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent tracking-widest group-hover:from-accent group-hover:to-primary transition-colors duration-200 drop-shadow-sm">
-              RUVAN INTELLECT
-            </span>
+          <Link href="/" className="flex items-center group flex-shrink-0 h-full">
+            <Image src="/logo/leadlyn.png" alt="LeadLyn Logo" width={180} height={60} className="object-contain h-16 md:h-20 lg:h-24 w-auto" priority />
           </Link>
 
           {/* Desktop Navigation Links */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
             {menuItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="relative text-lg font-medium text-gray-700 hover:text-primary transition-colors px-2 py-1 after:content-[''] after:block after:h-0.5 after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left"
+                className="relative text-base md:text-lg font-medium text-gray-700 hover:text-primary transition-colors px-2 py-1 after:content-[''] after:block after:h-0.5 after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left"
               >
                 {item.label}
               </Link>
@@ -72,9 +69,9 @@ const Navbar = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:block">
+          <div className="hidden md:block ml-4">
             <Link
-              href="/contact-sales"
+              href="/contactsales"
               className="inline-flex items-center px-5 py-2 border border-transparent text-base font-semibold rounded-lg text-white bg-primary hover:bg-accent transition-all duration-300 shadow-md"
             >
               Contact Sales
@@ -82,7 +79,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center">
             <button
               type="button"
               onClick={toggleMobileMenu}
@@ -109,20 +106,20 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white shadow-lg border-t border-primary/20 animate-fade-in-down">
-          <div className="px-4 pt-2 pb-3 space-y-1">
+          <div className="px-4 pt-4 pb-4 space-y-2">
             {menuItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="block px-3 py-2 rounded-md text-lg font-medium text-gray-700 hover:text-primary hover:bg-primary/10 transition-colors"
+                className="block px-4 py-3 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-primary/10 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item.label}
               </Link>
             ))}
             <Link
-              href="/contact-sales"
-              className="block w-full text-center px-3 py-2 rounded-md text-lg font-semibold text-white bg-primary hover:bg-accent transition-all duration-300 shadow-md"
+              href="/contactsales"
+              className="block w-full text-center px-4 py-3 rounded-md text-base font-semibold text-white bg-primary hover:bg-accent transition-all duration-300 shadow-md mt-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Contact Sales

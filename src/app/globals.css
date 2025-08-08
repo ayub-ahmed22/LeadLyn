@@ -5,8 +5,8 @@
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 255, 255, 255;
-  --primary-color: #31C0E8;
-  --accent-color: #F9A13F;
+  --primary-color: #e91d62;
+  --accent-color: #000000;
 }
 
 body {

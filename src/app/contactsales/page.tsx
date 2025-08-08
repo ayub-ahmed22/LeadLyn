@@ -40,9 +40,8 @@ export default function ContactSales() {
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-1">Office Address</h3>
                   <p className="text-gray-600">
-                    Plot No. 220, 2RV Grand,<br />
-                    39th Street, Shankar Nagar,<br />
-                    Pammal, Chennai – 600075
+                    26,Cunningham Road, Vasanth Nagar,<br />
+                    Bengaluru, Karnataka 560052
                   </p>
                 </div>
               </div>
@@ -50,8 +49,8 @@ export default function ContactSales() {
                 <span className="text-3xl text-primary"><FaPhoneAlt /></span>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-1">Sales Hotline</h3>
-                  <a href="tel:8610803533" className="text-primary hover:underline text-lg font-semibold">
-                    8610803533
+                  <a href="tel:9500696146" className="text-primary hover:underline text-lg font-semibold">
+                    9500696146
                   </a>
                 </div>
               </div>
@@ -63,8 +62,8 @@ export default function ContactSales() {
                 </span>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-1">WhatsApp</h3>
-                  <a href="https://wa.me/918610803533" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:underline text-lg font-semibold">
-                    +91 8610803533
+                  <a href="https://wa.me/919500696146" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:underline text-lg font-semibold">
+                    +91 9500696146
                   </a>
                 </div>
               </div>
@@ -72,8 +71,8 @@ export default function ContactSales() {
                 <span className="text-3xl text-primary"><FaEnvelope /></span>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-1">Sales Email</h3>
-                  <a href="mailto:info@ruvan.co.in" className="text-primary hover:underline text-lg font-semibold">
-                    info@ruvan.co.in
+                                  <a href="mailto:operation@leadlyn.com" className="text-primary hover:underline text-lg font-semibold">
+                  operation@leadlyn.com
                   </a>
                 </div>
               </div>
@@ -82,7 +81,7 @@ export default function ContactSales() {
           {/* Sales Inquiry Form Card */}
           <div className="bg-white rounded-2xl shadow-xl p-10">
             <h2 className="text-3xl font-bold text-primary mb-8 text-center">Request a Sales Consultation</h2>
-            <form className="space-y-6">
+            <form className="space-y-6" action="https://formspree.io/f/xdoqzqzq" method="POST">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -151,6 +150,12 @@ export default function ContactSales() {
                 >
                   Request Consultation
                 </button>
+              </div>
+              <div className="text-center text-green-600 font-semibold mt-4 hidden" id="form-success">
+                Thank you! Your request has been submitted.
+              </div>
+              <div className="text-center text-red-600 font-semibold mt-4 hidden" id="form-error">
+                Oops! Something went wrong. Please try again.
               </div>
             </form>
           </div>

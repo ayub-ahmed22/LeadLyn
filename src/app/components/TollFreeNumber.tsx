@@ -20,7 +20,7 @@ export default function TollFreeNumber() {
         >
           <div className="relative">
             <a
-              href="https://wa.me/918610803533"
+              href="https://wa.me/919500696146"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-gradient-to-r from-primary to-accent text-white px-6 py-3 rounded-full shadow-lg hover:from-accent hover:to-primary transition-colors duration-300"
@@ -53,14 +53,14 @@ export default function TollFreeNumber() {
         >
           <div className="relative">
             <a
-              href="mailto:info@ruvan.co.in"
+              href="mailto:operation@leadlyn.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-accent text-white px-6 py-3 rounded-full shadow-lg hover:bg-primary transition-colors duration-300"
-              title="Email info@ruvan.co.in"
+              className="flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full shadow-lg hover:bg-primary transition-colors duration-300"
+              title="Email operation@leadlyn.com"
             >
               <span className="text-2xl"><FaEnvelope /></span>
-              <span className="hidden sm:block font-semibold">info@ruvan.co.in</span>
+              <span className="hidden sm:block font-semibold">operation@leadlyn.com</span>
             </a>
             <button
               onClick={() => setIsEmailVisible(false)}
@@ -82,13 +82,13 @@ export default function TollFreeNumber() {
         >
           <div className="relative">
             <a
-              href="tel:8610803533"
+              href="tel:9500696146"
               className="flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full shadow-lg hover:bg-accent transition-colors duration-300"
             >
               <span className="text-2xl">📞</span>
               <div className="flex flex-col">
                 <span className="text-sm font-medium">Toll-Free Support</span>
-                <span className="text-lg font-bold">8610803533</span>
+                <span className="text-lg font-bold">9500696146</span>
               </div>
             </a>
             <button

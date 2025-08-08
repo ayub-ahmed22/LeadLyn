@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="relative h-[90vh] bg-gradient-to-r from-primary to-accent text-white overflow-hidden">
+    <section className="relative min-h-[70vh] md:min-h-[90vh] pt-24 md:pt-28 bg-gradient-to-r from-primary to-accent text-white overflow-hidden flex items-center">
       <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-accent/90 z-10" />
       <Image
         src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&h=1080&q=80"
@@ -17,19 +17,18 @@ export default function Hero() {
       />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary/50 z-10" />
       
-      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
+      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center h-full py-12 md:py-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
-            Transforming Businesses Through
-            <span className="text-primary"> Innovation</span>
+            Driving Business Growth Through
+            <span className="text-black"> Innovation</span>
           </h1>
           <p className="text-xl md:text-2xl text-white max-w-3xl mb-12 leading-relaxed">
-            Empowering organizations with cutting-edge security and technology solutions
-            that drive growth and success
+            We empower businesses with expert lead generation, telecalling, and end-to-end sales services—backed by secure technology solutions including loans & insurance support, CCTV, networking, and cybersecurity. Accelerate customer acquisition and scale with confidence.
           </p>
           <div className="flex flex-col sm:flex-row gap-6">
             <Link
@@ -40,7 +39,7 @@ export default function Hero() {
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-10 py-4 border-2 border-accent text-lg font-semibold rounded-lg text-white bg-primary hover:bg-accent transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="inline-flex items-center justify-center px-10 py-4 border-2 border-white text-lg font-semibold rounded-lg text-white bg-primary hover:bg-accent transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Get Started
             </Link>

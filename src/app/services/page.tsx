@@ -1,54 +1,89 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import ServicesSection from '../components/ServicesSection';
 import Image from 'next/image';
 
 const services = [
   {
-    title: "Customer Management",
-    description: "We offer a full range of financial services designed to simplify and support your personal and business goals",
+    title: "Telecalling Services",
+    description: "Professional outbound and inbound customer engagement solutions.",
+    icon: "📞",
+    items: [
+      "Outbound Telecalling",
+      "Inbound Customer Support",
+      "Lead Qualification",
+      "Appointment Setting",
+      "Customer Surveys",
+      "Follow-up Calls",
+      "Sales Support",
+      "Customer Retention"
+    ],
+    image: "https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    title: "Lead Generation & Outsourcing",
+    description: "Scalable lead generation and business process outsourcing.",
+    icon: "🎯",
+    items: [
+      "Lead Generation",
+      "Data Mining",
+      "Market Research",
+      "Business Process Outsourcing",
+      "Customer Service Outsourcing",
+      "Back Office Support",
+      "Data Entry Services",
+      "Administrative Support"
+    ],
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    title: "End-to-End Sales & Service",
+    description: "Complete sales lifecycle from cold calling to deal closure.",
+    icon: "🤝",
+    items: [
+      "Cold Calling",
+      "Lead Qualification",
+      "Sales Consultation",
+      "Deal Negotiation",
+      "Contract Preparation",
+      "Deal Closure",
+      "Post-Sale Support",
+      "Customer Success Management"
+    ],
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    title: "Loan & Insurance Services",
+    description: "Personal, home, and business loans with comprehensive insurance coverage.",
     icon: "💰",
     items: [
-      "CRM - Based Telecalling (for sales & services)",
-      "Insurance (All Types)",
-      "Credit Cards (All Banks)",
-      "Loans (All Types)",
-      "Fixed Deposits",
-      "Mutual Funds"
+      "Personal Loans",
+      "Home Loans",
+      "Business Loans",
+      "Life Insurance",
+      "Health Insurance",
+      "Vehicle Insurance",
+      "Property Insurance",
+      "Business Insurance"
     ],
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&h=800&q=80"
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80"
   },
   {
-    title: "Building Management",
-    description: "Enhance your building's security and automation with our advanced systems",
-    icon: "🏢",
+    title: "CCTV & Cybersecurity",
+    description: "Complete security systems with advanced cybersecurity protection.",
+    icon: "🔒",
     items: [
-      "Parking Management",
-      "CCTV Camera",
-      "IP Camera",
-      "DVR, NVR",
-      "Access Control",
-      "Time Attendance",
-      "RFID Magnetic Control",
-      "GSM Home Security",
-      "Flap Barrier",
-      "Biometric Systems",
-      "Turnstile",
-      "Boom Barrier"
+      "CCTV Camera Installation",
+      "IP Camera Systems",
+      "DVR & NVR Setup",
+      "Access Control Systems",
+      "Biometric Security",
+      "Network Security",
+      "Firewall Protection",
+      "Cybersecurity Audits"
     ],
-    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1200&h=800&q=80"
-  },
-  {
-    title: "Networking & Cybersecurity",
-    description: "Robust infrastructure and data protection solutions tailored for modern businesses",
-    icon: "🌐",
-    items: [
-      "LAN (UTP)",
-      "WAN (Optical Fibre)",
-      "Server & NAS/SAN Installation",
-      "Firewall Installation"
-    ],
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&h=800&q=80"
+    image: "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=1200&q=80"
   }
 ];
 
@@ -72,6 +107,8 @@ export default function Services() {
           </p>
         </div>
       </section>
+
+      <ServicesSection />
 
       {/* Services Grid */}
       <section className="py-24 bg-gray-50">
@@ -101,15 +138,8 @@ export default function Services() {
                       <h2 className="text-3xl font-bold text-gray-900">{service.title}</h2>
                     </div>
                     <p className="text-lg text-gray-600 mb-8">{service.description}</p>
-                    {service.title === 'Customer Management' && (
-                      <div className="mb-6 p-4 bg-primary/10 border-l-4 border-primary rounded-lg">
-                        <span className="block text-lg font-bold text-primary">CRM - Based Telecalling (for sales & services)</span>
-                      </div>
-                    )}
                     <ul className="space-y-4">
-                      {service.items
-                        .filter(item => item !== 'CRM - Based Telecalling (for sales & services)')
-                        .map((item, itemIndex) => (
+                      {service.items.map((item, itemIndex) => (
                           <li key={itemIndex} className="flex items-center gap-3">
                             <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />

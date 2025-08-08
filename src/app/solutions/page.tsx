@@ -3,136 +3,104 @@ import Navbar from '../components/Navbar';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-const solutions = [
+const serviceSolutions = [
   {
-    industry: "Commercial",
-    description: "Comprehensive security and technology solutions for businesses",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&h=800&q=80",
+    title: 'Telecalling Services',
+    description: 'Professional customer engagement and support.',
+    image: 'https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=1200&q=80',
     challenges: [
-      "Security management",
-      "Network infrastructure",
-      "Access control"
+      'Lead qualification',
+      'Customer retention',
+      'Efficient communication',
     ],
     solutions: [
-      {
-        name: "Smart Access Control",
-        description: "Advanced access management systems for enhanced security",
-        image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&h=600&q=80",
-        benefits: [
-          "Biometric authentication",
-          "Mobile access",
-          "Audit trails"
-        ]
-      },
-      {
-        name: "Integrated Security",
-        description: "Comprehensive security systems with centralized management",
-        image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&h=600&q=80",
-        benefits: [
-          "CCTV monitoring",
-          "Alarm systems",
-          "Remote access"
-        ]
-      }
-    ]
+      'Outbound and inbound telecalling',
+      'Appointment setting and follow-ups',
+      'Customer surveys and support',
+    ],
   },
   {
-    industry: "Manufacturing",
-    description: "Industrial automation and security solutions",
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&h=800&q=80",
+    title: 'Lead Generation & Outsourcing',
+    description: 'Scalable business growth and operational efficiency.',
+    image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80',
     challenges: [
-      "Production monitoring",
-      "Equipment security",
-      "Process automation"
+      'Consistent lead flow',
+      'Data management',
+      'Cost-effective operations',
     ],
     solutions: [
-      {
-        name: "Production Monitoring",
-        description: "Real-time monitoring and control of manufacturing processes",
-        image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&h=600&q=80",
-        benefits: [
-          "Real-time data",
-          "Process optimization",
-          "Quality control"
-        ]
-      },
-      {
-        name: "Network Infrastructure",
-        description: "Robust industrial networking solutions",
-        image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&h=600&q=80",
-        benefits: [
-          "High reliability",
-          "Scalability",
-          "Remote access"
-        ]
-      }
-    ]
+      'Lead generation campaigns',
+      'Data mining and market research',
+      'Business process outsourcing',
+      'Back office and administrative support',
+    ],
   },
   {
-    industry: "Residential",
-    description: "Complete home security and automation solutions",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&h=800&q=80",
+    title: 'End-to-End Sales & Service',
+    description: 'Complete sales lifecycle management.',
+    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80',
     challenges: [
-      "Home security",
-      "Remote monitoring",
-      "Smart home integration"
+      'Converting leads to customers',
+      'Managing sales pipeline',
+      'Post-sale support',
     ],
     solutions: [
-      {
-        name: "Smart Home Security",
-        description: "Integrated security system with mobile app control",
-        image: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=800&h=600&q=80",
-        benefits: [
-          "Remote monitoring",
-          "Smart alerts",
-          "Easy control"
-        ]
-      },
-      {
-        name: "Home Network Setup",
-        description: "High-speed home networking with complete coverage",
-        image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&h=600&q=80",
-        benefits: [
-          "Full coverage",
-          "Parental controls",
-          "Guest access"
-        ]
-      }
-    ]
-  }
+      'Cold calling and lead qualification',
+      'Sales consultation and negotiation',
+      'Deal closure and customer success management',
+    ],
+  },
+  {
+    title: 'Loan & Insurance Services',
+    description: 'Comprehensive financial solutions for individuals and businesses.',
+    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80',
+    challenges: [
+      'Access to credit and funding',
+      'Insurance coverage for assets and life',
+      'Financial planning',
+    ],
+    solutions: [
+      'Personal, home, and business loans',
+      'Life, health, vehicle, and property insurance',
+      'Expert financial consultation',
+    ],
+  },
+  {
+    title: 'CCTV & Cybersecurity',
+    description: 'Advanced security and data protection for modern organizations.',
+    image: 'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=1200&q=80',
+    challenges: [
+      'Physical security threats',
+      'Cybersecurity risks',
+      'Real-time monitoring',
+    ],
+    solutions: [
+      'CCTV and IP camera installation',
+      'DVR/NVR systems',
+      'Network security and firewall setup',
+      'Cybersecurity audits and monitoring',
+    ],
+  },
 ];
 
 export default function SolutionsPage() {
   return (
     <main className="min-h-screen bg-gray-50">
       <Navbar />
-      
       {/* Hero Section */}
       <section className="relative h-[60vh] bg-gradient-to-r from-primary to-accent text-white">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <Image
-          src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1920&h=1080&q=80"
+          src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1920&q=80"
           alt="Solutions Hero"
           fill
           className="object-cover"
           priority
         />
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
-          <h1 className="text-5xl font-bold mb-6">RUVAN INTELLECT</h1>
+          <h1 className="text-5xl font-bold mb-6">Our Solutions</h1>
           <p className="text-xl text-white max-w-3xl">
-            Tailored security and technology solutions for your specific industry needs
-          </p>
-        </div>
-      </section>
-
-      {/* Key Partnerships & Business Impact Section */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="bg-white rounded-2xl shadow-xl p-8">
-          <h2 className="text-2xl font-bold text-blue-900 mb-4">Our Journey & Impact</h2>
-          <p className="text-gray-700 text-lg">
-            Vijay Anand commenced his entrepreneurial journey by founding Shri VJ Corporation, specializing in networking, IT infrastructure, and security solutions. The company swiftly established a strong reputation by delivering high-quality networking and CCTV support to key clients such as NLC and Siemens through competitive tender projects.<br /><br />
-            Building on this foundation, Vijay Anand launched RUVAN Intellect Pvt. Ltd., focusing on advanced cybersecurity and enterprise networking. By partnering with global leaders like CISCO and Palo Alto Networks, RUVAN Intellect successfully deployed cutting-edge firewall and cybersecurity solutions. The company expanded rapidly, executing projects for prominent organizations including Innovatiview, SKS Infotech, TCS iON, CSIR, and NTA, while scaling its technical workforce to meet growing demand.<br /><br />
-            In addition to its core IT and cybersecurity services, RUVAN Intellect provides specialized CRM telecalling services to its affiliate, Austra Finserv Pvt. Ltd., enhancing customer engagement and operational support.
+            Business growth, security, and customer engagement—powered by our expert services.
           </p>
         </div>
       </section>
@@ -140,7 +108,7 @@ export default function SolutionsPage() {
       {/* Solutions Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {solutions.map((solution, index) => (
+          {serviceSolutions.map((service, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 40 }}
@@ -152,19 +120,19 @@ export default function SolutionsPage() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
                 <div className="relative h-[400px] rounded-lg overflow-hidden">
                   <Image
-                    src={solution.image}
-                    alt={solution.industry}
+                    src={service.image}
+                    alt={service.title}
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div>
-                  <h2 className="text-3xl font-bold text-gray-900 mb-4">{solution.industry}</h2>
-                  <p className="text-xl text-gray-600 mb-6">{solution.description}</p>
+                  <h2 className="text-3xl font-bold text-gray-900 mb-4">{service.title}</h2>
+                  <p className="text-xl text-gray-600 mb-6">{service.description}</p>
                   <div className="space-y-4">
                     <h3 className="text-lg font-semibold text-gray-900">Key Challenges:</h3>
                     <ul className="space-y-2">
-                      {solution.challenges.map((challenge, idx) => (
+                      {service.challenges.map((challenge, idx) => (
                         <li key={idx} className="flex items-center text-gray-600">
                           <svg className="w-5 h-5 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -176,41 +144,20 @@ export default function SolutionsPage() {
                   </div>
                 </div>
               </div>
-              
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 bg-gray-50">
-                {solution.solutions.map((item, itemIndex) => (
-                  <motion.div
-                    key={itemIndex}
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: itemIndex * 0.1 }}
-                    viewport={{ once: true }}
-                    className="bg-white rounded-lg shadow-md overflow-hidden"
-                  >
-                    <div className="relative h-48">
-                      <Image
-                        src={item.image}
-                        alt={item.name}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                    <div className="p-6">
-                      <h3 className="text-xl font-semibold text-gray-900 mb-3">{item.name}</h3>
-                      <p className="text-gray-600 mb-4">{item.description}</p>
-                      <div className="space-y-2">
-                        {item.benefits.map((benefit, benefitIndex) => (
-                          <div key={benefitIndex} className="flex items-center text-gray-600">
-                            <svg className="w-5 h-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                            </svg>
-                            {benefit}
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </motion.div>
-                ))}
+                <div className="bg-white rounded-lg shadow-md overflow-hidden p-6 flex flex-col justify-center">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Our Solutions</h3>
+                  <ul className="space-y-2">
+                    {service.solutions.map((sol, solIdx) => (
+                      <li key={solIdx} className="flex items-center text-gray-600">
+                        <svg className="w-5 h-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        {sol}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </motion.div>
           ))}
@@ -228,12 +175,12 @@ export default function SolutionsPage() {
         />
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">Need a Custom Solution?</h2>
-          <p className="text-xl text-primary mb-8 max-w-3xl mx-auto">
-            Let us help you find the perfect security and technology solution for your specific needs
+          <p className="text-xl text-white mb-8 max-w-3xl mx-auto">
+            Let us help you find the perfect business, security, or technology solution for your needs.
           </p>
           <a
             href="/contact"
-            className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-accent hover:bg-primary transition-colors"
+            className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-primary transition-colors"
           >
             Get in Touch
           </a>

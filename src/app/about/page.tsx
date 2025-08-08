@@ -8,27 +8,27 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen bg-gray-50">
       <Navbar />
-      <div className="pt-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div className="pt-24 md:pt-28">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
           {/* Hero Section */}
           <motion.section
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
-            className="relative h-[40vh] mb-20"
+            className="relative h-[32vh] md:h-[40vh] mb-12 md:mb-20"
           >
             <div className="absolute inset-0 bg-black/50 z-10" />
             <Image
-              src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1920&h=1080&q=80"
+              src="https://images.unsplash.com/photo-1461344577544-4e5dc9487184?auto=format&fit=crop&w=1920&q=80"
               alt="About Hero"
               fill
               className="object-cover"
               priority
             />
             <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
-              <h1 className="text-5xl font-bold text-white mb-6">About RUVAN INTELLECT</h1>
-              <p className="text-xl text-primary max-w-3xl">
+              <h1 className="text-5xl font-bold text-white mb-6">About LeadLyn</h1>
+              <p className="text-xl text-white max-w-3xl">
                 Your trusted partner in security and technology solutions
               </p>
             </div>
@@ -47,13 +47,10 @@ export default function AboutPage() {
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
                 <div className="prose prose-lg max-w-none">
                   <p className="text-gray-600 mb-6">
-                    RUVAN INTELLECT is a leading provider of comprehensive technology solutions. 
-                    Established in 2023, we have been dedicated to delivering innovative and reliable services.
+                    Founded with a vision to empower businesses, LeadLyn delivers innovative technology and security solutions tailored to modern challenges. Since 2025, we have helped organizations transform, grow, and stay secure in a rapidly evolving digital world.
                   </p>
                   <p className="text-gray-600">
-                    Our commitment to excellence and customer satisfaction has made us a trusted name in the industry.
-                    We combine cutting-edge technology with expert knowledge to provide solutions that meet and exceed
-                    our clients' expectations.
+                    Our passionate team combines deep expertise with a customer-first approach, ensuring every client receives solutions that drive real results. At LeadLyn, we believe in building lasting partnerships and making technology work for you.
                   </p>
                 </div>
               </div>
@@ -126,45 +123,38 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <motion.div whileHover={{ scale: 1.04 }} className="bg-primary/10 p-6 rounded-lg cursor-pointer transition-transform">
                 <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
-                  <Image src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&h=600&q=80" alt="Online and Onsite Support" fill className="object-cover" />
+                  <Image src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=800&q=80" alt="Telecalling Services" fill className="object-cover" />
                 </div>
-                <h3 className="text-lg font-medium text-primary mb-2">Online and Onsite Support</h3>
-                <p className="text-primary">Round-the-clock assistance to address technical issues remotely or through onsite visits.</p>
+                <h3 className="text-lg font-medium text-primary mb-2">Telecalling Services</h3>
+                <p className="text-primary">Professional outbound and inbound telecalling, appointment setting, customer surveys, and support.</p>
               </motion.div>
               <motion.div whileHover={{ scale: 1.04 }} className="bg-primary/10 p-6 rounded-lg cursor-pointer transition-transform">
                 <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
-                  <Image src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&h=600&q=80" alt="AMC Support" fill className="object-cover" />
+                  <Image src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80" alt="Lead Generation & Outsourcing" fill className="object-cover" />
                 </div>
-                <h3 className="text-lg font-medium text-primary mb-2">AMC Support</h3>
-                <p className="text-primary">Annual Maintenance Contracts tailored to client needs.</p>
+                <h3 className="text-lg font-medium text-primary mb-2">Lead Generation & Outsourcing</h3>
+                <p className="text-primary">Scalable lead generation, data mining, market research, business process outsourcing, and back office support.</p>
               </motion.div>
               <motion.div whileHover={{ scale: 1.04 }} className="bg-primary/10 p-6 rounded-lg cursor-pointer transition-transform">
                 <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
-                  <Image src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&h=600&q=80" alt="Network Implementation" fill className="object-cover" />
+                  <Image src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="End-to-End Sales & Service" fill className="object-cover" />
                 </div>
-                <h3 className="text-lg font-medium text-primary mb-2">Network Implementation</h3>
-                <p className="text-primary">Design, deployment, and optimization of robust network solutions.</p>
+                <h3 className="text-lg font-medium text-primary mb-2">End-to-End Sales & Service</h3>
+                <p className="text-primary">Complete sales lifecycle management: cold calling, lead qualification, sales consultation, deal closure, and customer success.</p>
               </motion.div>
               <motion.div whileHover={{ scale: 1.04 }} className="bg-primary/10 p-6 rounded-lg cursor-pointer transition-transform">
                 <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
-                  <Image src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&h=600&q=80" alt="CCTV Installation" fill className="object-cover" />
+                  <Image src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="Loan & Insurance Services" fill className="object-cover" />
                 </div>
-                <h3 className="text-lg font-medium text-primary mb-2">CCTV Installation</h3>
-                <p className="text-primary">Professional installation and maintenance of CCTV systems.</p>
+                <h3 className="text-lg font-medium text-primary mb-2">Loan & Insurance Services</h3>
+                <p className="text-primary">Comprehensive financial solutions including personal, home, and business loans, as well as life, health, vehicle, and property insurance.</p>
               </motion.div>
               <motion.div whileHover={{ scale: 1.04 }} className="bg-primary/10 p-6 rounded-lg cursor-pointer transition-transform">
                 <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
-                  <Image src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=800&h=600&q=80" alt="Network Connectivity" fill className="object-cover" />
+                  <Image src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=800&q=80" alt="CCTV & Cybersecurity" fill className="object-cover" />
                 </div>
-                <h3 className="text-lg font-medium text-primary mb-2">Network Connectivity</h3>
-                <p className="text-primary">Implementation of fibre optic and LAN technologies.</p>
-              </motion.div>
-              <motion.div whileHover={{ scale: 1.04 }} className="bg-primary/10 p-6 rounded-lg cursor-pointer transition-transform">
-                <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
-                  <Image src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&h=600&q=80" alt="ITES Services" fill className="object-cover" />
-                </div>
-                <h3 className="text-lg font-medium text-primary mb-2">ITES Services</h3>
-                <p className="text-primary">Technical and non-technical process solutions.</p>
+                <h3 className="text-lg font-medium text-primary mb-2">CCTV & Cybersecurity</h3>
+                <p className="text-primary">Advanced security and data protection: CCTV/IP camera installation, DVR/NVR systems, network security, and cybersecurity audits.</p>
               </motion.div>
             </div>
           </motion.div>
@@ -181,102 +171,34 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <motion.div whileHover={{ scale: 1.04 }} className="bg-primary/10 p-6 rounded-lg cursor-pointer transition-transform">
                 <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
-                  <Image src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&h=600&q=80" alt="Experienced Professionals" fill className="object-cover" />
+                  <Image src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Industry Expertise" fill className="object-cover" />
                 </div>
-                <h3 className="text-lg font-medium text-primary mb-2">Experienced Professionals</h3>
-                <p className="text-primary">Dedicated team committed to delivering exceptional service.</p>
+                <h3 className="text-lg font-medium text-primary mb-2">Industry Expertise</h3>
+                <p className="text-primary">Our team brings years of experience in sales, technology, and customer engagement.</p>
               </motion.div>
               <motion.div whileHover={{ scale: 1.04 }} className="bg-primary/10 p-6 rounded-lg cursor-pointer transition-transform">
                 <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
-                  <Image src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&h=600&q=80" alt="Tailor-Made Solutions" fill className="object-cover" />
+                  <Image src="https://images.unsplash.com/photo-1461344577544-4e5dc9487184?auto=format&fit=crop&w=800&q=80" alt="Comprehensive Solutions" fill className="object-cover" />
                 </div>
-                <h3 className="text-lg font-medium text-primary mb-2">Tailor-Made Solutions</h3>
-                <p className="text-primary">Customized offerings for unique client needs.</p>
+                <h3 className="text-lg font-medium text-primary mb-2">Comprehensive Solutions</h3>
+                <p className="text-primary">We offer end-to-end services, from lead generation to cybersecurity, tailored to your business needs.</p>
               </motion.div>
               <motion.div whileHover={{ scale: 1.04 }} className="bg-primary/10 p-6 rounded-lg cursor-pointer transition-transform">
                 <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
-                  <Image src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&h=600&q=80" alt="Reliable Support" fill className="object-cover" />
+                  <Image src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Customer-Centric Approach" fill className="object-cover" />
                 </div>
-                <h3 className="text-lg font-medium text-primary mb-2">Reliable Support</h3>
-                <p className="text-primary">Round-the-clock support and proactive maintenance.</p>
+                <h3 className="text-lg font-medium text-primary mb-2">Customer-Centric Approach</h3>
+                <p className="text-primary">We focus on building long-term relationships and delivering measurable results.</p>
               </motion.div>
               <motion.div whileHover={{ scale: 1.04 }} className="bg-primary/10 p-6 rounded-lg cursor-pointer transition-transform">
                 <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
-                  <Image src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&h=600&q=80" alt="Cutting-Edge Technology" fill className="object-cover" />
+                  <Image src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=800&q=80" alt="Innovation & Security" fill className="object-cover" />
                 </div>
-                <h3 className="text-lg font-medium text-primary mb-2">Cutting-Edge Technology</h3>
-                <p className="text-primary">Latest tech and industry best practices.</p>
+                <h3 className="text-lg font-medium text-primary mb-2">Innovation & Security</h3>
+                <p className="text-primary">We leverage the latest technology to ensure your business stays secure and ahead of the curve.</p>
               </motion.div>
             </div>
           </motion.div>
-
-          {/* Leadership Profile Section */}
-          <motion.section
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.5 }}
-            viewport={{ once: true }}
-            className="py-20 bg-gray-50"
-          >
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-white rounded-2xl shadow-xl p-10">
-              <h2 className="text-3xl font-bold text-primary mb-8 text-center">Leadership Profile</h2>
-              <div className="flex flex-col md:flex-row gap-8 items-start">
-                <div className="flex-shrink-0 flex flex-col items-center md:items-start w-full md:w-1/3">
-                  <div className="relative h-48 w-48 rounded-full overflow-hidden mb-4">
-                    <Image 
-                      src="/logo/vijay_na_pic-removebg-preview (1).png" 
-                      alt="Vijay Anand" 
-                      fill 
-                      className="object-cover" 
-                      priority 
-                    />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-1">Vijay Anand R</h3>
-                  <p className="text-primary font-semibold mb-2">Managing Director</p>
-                  <p className="text-gray-600 mb-4">RUVAN INTELLECT PRIVATE LIMITED</p>
-                  <div className="space-y-2 text-gray-700">
-                    <p className="flex items-center gap-2"><FaMapMarkerAlt className="text-primary" /> Chennai, Tamil Nadu</p>
-                    <p className="flex items-center gap-2"><FaPhoneAlt className="text-primary" /> <a href="tel:+917530041168" className="hover:underline">+91 75300 41168</a></p>
-                    <p className="flex items-center gap-2"><FaEnvelope className="text-primary" /> <a href="mailto:info@ruvan.co.in" className="hover:underline">info@ruvan.co.in</a></p>
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h4 className="text-xl font-semibold text-gray-800 mb-3">About Vijay Anand</h4>
-                  <p className="text-gray-700 mb-6">
-                    Vijay Anand is a visionary entrepreneur and the driving force behind multiple successful ventures. He began his business journey in 2019 with Shri VJ Corporation, specializing in networking, IT infrastructure, and security solutions, catering to major clients like NLC and Siemens.
-                    <br /><br />
-                    In 2023, he launched RUVAN Intellect Pvt. Ltd., focused on advanced cybersecurity and networking. Under his solo leadership, the company partnered with global tech giants like CISCO and Palo Alto Networks, rapidly scaling to serve top-tier organizations including TCS iON, NTA, and CSIR.
-                    <br /><br />
-                    In 2024, he co-founded Austra Finserv Pvt. Ltd., offering integrated insurance and banking services, covering Health, Life, and General Insurance. The firm quickly established a strong market presence under his strategic leadership.
-                    <br /><br />
-                    Vijay Anand commenced his entrepreneurial journey by founding Shri VJ Corporation, specializing in networking, IT infrastructure, and security solutions. The company swiftly established a strong reputation by delivering high-quality networking and CCTV support to key clients such as NLC and Siemens through competitive tender projects.
-                    <br /><br />
-                    Building on this foundation, Vijay Anand launched RUVAN Intellect Pvt. Ltd., focusing on advanced cybersecurity and enterprise networking. By partnering with global leaders like CISCO and Palo Alto Networks, RUVAN Intellect successfully deployed cutting-edge firewall and cybersecurity solutions. The company expanded rapidly, executing projects for prominent organizations including Innovatiview, SKS Infotech, TCS iON, CSIR, and NTA, while scaling its technical workforce to meet growing demand.
-                    <br /><br />
-                    In addition to its core IT and cybersecurity services, RUVAN Intellect provides specialized CRM telecalling services to its affiliate, Austra Finserv Pvt. Ltd., enhancing customer engagement and operational support.
-                  </p>
-                  <div className="mb-6">
-                    <h5 className="font-semibold text-gray-800 mb-2">Expertise</h5>
-                    <ul className="list-disc list-inside text-gray-700 space-y-1">
-                      <li>Strategic Business Planning & Execution</li>
-                      <li>Startup Development & Entrepreneurship</li>
-                      <li>Financial Management & Market Expansion</li>
-                      <li>Product Innovation & Go-to-Market Strategies</li>
-                      <li>Negotiation & Partnership Development</li>
-                      <li>Team Building & Leadership</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h5 className="font-semibold text-gray-800 mb-2">Education</h5>
-                    <ul className="list-disc list-inside text-gray-700 space-y-1">
-                      <li>Master of Technology in Computer Science Engineering, Hindustan University</li>
-                      <li>Master of Science in Software Engineering, Periyar Maniammai Institute of Science & Technology</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.section>
         </div>
       </div>
     </main>

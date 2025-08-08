@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ruvan Tech - Security & Technology Solutions",
+  title: "LeadLyn - Security & Technology Solutions",
   description: "Comprehensive security and technology solutions for your business needs",
 };
 
